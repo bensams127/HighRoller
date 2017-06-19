@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B291F361EF894350071EF46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F351EF894350071EF46 /* AppDelegate.swift */; };
+		2B291F381EF894350071EF46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F371EF894350071EF46 /* ViewController.swift */; };
+		2B291F3B1EF894350071EF46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F391EF894350071EF46 /* Main.storyboard */; };
+		2B291F3D1EF894350071EF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F3C1EF894350071EF46 /* Assets.xcassets */; };
+		2B291F401EF894350071EF46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F3E1EF894350071EF46 /* LaunchScreen.storyboard */; };
+		2B291F451EF894350071EF46 /* HighRoller WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2B291F441EF894350071EF46 /* HighRoller WatchKit App.app */; };
+		2B291F4B1EF894350071EF46 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F491EF894350071EF46 /* Interface.storyboard */; };
+		2B291F4D1EF894350071EF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F4C1EF894350071EF46 /* Assets.xcassets */; };
+		2B291F541EF894350071EF46 /* HighRoller WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2B291F531EF894350071EF46 /* HighRoller WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B291F591EF894350071EF46 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F581EF894350071EF46 /* InterfaceController.swift */; };
+		2B291F5B1EF894350071EF46 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F5A1EF894350071EF46 /* ExtensionDelegate.swift */; };
+		2B291F5D1EF894350071EF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F5C1EF894350071EF46 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B291F461EF894350071EF46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B291F2A1EF894350071EF46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B291F431EF894350071EF46;
+			remoteInfo = "HighRoller WatchKit App";
+		};
+		2B291F551EF894350071EF46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B291F2A1EF894350071EF46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B291F521EF894350071EF46;
+			remoteInfo = "HighRoller WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B291F641EF894350071EF46 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2B291F541EF894350071EF46 /* HighRoller WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B291F681EF894350071EF46 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2B291F451EF894350071EF46 /* HighRoller WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B291F321EF894350071EF46 /* HighRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B291F351EF894350071EF46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B291F371EF894350071EF46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B291F3A1EF894350071EF46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B291F3C1EF894350071EF46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B291F3F1EF894350071EF46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B291F411EF894350071EF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B291F441EF894350071EF46 /* HighRoller WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HighRoller WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B291F4A1EF894350071EF46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2B291F4C1EF894350071EF46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B291F4E1EF894350071EF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B291F531EF894350071EF46 /* HighRoller WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HighRoller WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B291F581EF894350071EF46 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2B291F5A1EF894350071EF46 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2B291F5C1EF894350071EF46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B291F5E1EF894350071EF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B291F2F1EF894350071EF46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B291F501EF894350071EF46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B291F291EF894350071EF46 = {
+			isa = PBXGroup;
+			children = (
+				2B291F341EF894350071EF46 /* HighRoller */,
+				2B291F481EF894350071EF46 /* HighRoller WatchKit App */,
+				2B291F571EF894350071EF46 /* HighRoller WatchKit Extension */,
+				2B291F331EF894350071EF46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B291F331EF894350071EF46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B291F321EF894350071EF46 /* HighRoller.app */,
+				2B291F441EF894350071EF46 /* HighRoller WatchKit App.app */,
+				2B291F531EF894350071EF46 /* HighRoller WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B291F341EF894350071EF46 /* HighRoller */ = {
+			isa = PBXGroup;
+			children = (
+				2B291F351EF894350071EF46 /* AppDelegate.swift */,
+				2B291F371EF894350071EF46 /* ViewController.swift */,
+				2B291F391EF894350071EF46 /* Main.storyboard */,
+				2B291F3C1EF894350071EF46 /* Assets.xcassets */,
+				2B291F3E1EF894350071EF46 /* LaunchScreen.storyboard */,
+				2B291F411EF894350071EF46 /* Info.plist */,
+			);
+			path = HighRoller;
+			sourceTree = "<group>";
+		};
+		2B291F481EF894350071EF46 /* HighRoller WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2B291F491EF894350071EF46 /* Interface.storyboard */,
+				2B291F4C1EF894350071EF46 /* Assets.xcassets */,
+				2B291F4E1EF894350071EF46 /* Info.plist */,
+			);
+			path = "HighRoller WatchKit App";
+			sourceTree = "<group>";
+		};
+		2B291F571EF894350071EF46 /* HighRoller WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2B291F581EF894350071EF46 /* InterfaceController.swift */,
+				2B291F5A1EF894350071EF46 /* ExtensionDelegate.swift */,
+				2B291F5C1EF894350071EF46 /* Assets.xcassets */,
+				2B291F5E1EF894350071EF46 /* Info.plist */,
+			);
+			path = "HighRoller WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B291F311EF894350071EF46 /* HighRoller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B291F691EF894350071EF46 /* Build configuration list for PBXNativeTarget "HighRoller" */;
+			buildPhases = (
+				2B291F2E1EF894350071EF46 /* Sources */,
+				2B291F2F1EF894350071EF46 /* Frameworks */,
+				2B291F301EF894350071EF46 /* Resources */,
+				2B291F681EF894350071EF46 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B291F471EF894350071EF46 /* PBXTargetDependency */,
+			);
+			name = HighRoller;
+			productName = HighRoller;
+			productReference = 2B291F321EF894350071EF46 /* HighRoller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B291F431EF894350071EF46 /* HighRoller WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B291F651EF894350071EF46 /* Build configuration list for PBXNativeTarget "HighRoller WatchKit App" */;
+			buildPhases = (
+				2B291F421EF894350071EF46 /* Resources */,
+				2B291F641EF894350071EF46 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B291F561EF894350071EF46 /* PBXTargetDependency */,
+			);
+			name = "HighRoller WatchKit App";
+			productName = "HighRoller WatchKit App";
+			productReference = 2B291F441EF894350071EF46 /* HighRoller WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2B291F521EF894350071EF46 /* HighRoller WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B291F611EF894350071EF46 /* Build configuration list for PBXNativeTarget "HighRoller WatchKit Extension" */;
+			buildPhases = (
+				2B291F4F1EF894350071EF46 /* Sources */,
+				2B291F501EF894350071EF46 /* Frameworks */,
+				2B291F511EF894350071EF46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HighRoller WatchKit Extension";
+			productName = "HighRoller WatchKit Extension";
+			productReference = 2B291F531EF894350071EF46 /* HighRoller WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B291F2A1EF894350071EF46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Sams;
+				TargetAttributes = {
+					2B291F311EF894350071EF46 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 373924JE2R;
+						ProvisioningStyle = Automatic;
+					};
+					2B291F431EF894350071EF46 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 373924JE2R;
+						ProvisioningStyle = Automatic;
+					};
+					2B291F521EF894350071EF46 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 373924JE2R;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2B291F2D1EF894350071EF46 /* Build configuration list for PBXProject "HighRoller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B291F291EF894350071EF46;
+			productRefGroup = 2B291F331EF894350071EF46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B291F311EF894350071EF46 /* HighRoller */,
+				2B291F431EF894350071EF46 /* HighRoller WatchKit App */,
+				2B291F521EF894350071EF46 /* HighRoller WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B291F301EF894350071EF46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B291F401EF894350071EF46 /* LaunchScreen.storyboard in Resources */,
+				2B291F3D1EF894350071EF46 /* Assets.xcassets in Resources */,
+				2B291F3B1EF894350071EF46 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B291F421EF894350071EF46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B291F4D1EF894350071EF46 /* Assets.xcassets in Resources */,
+				2B291F4B1EF894350071EF46 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B291F511EF894350071EF46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B291F5D1EF894350071EF46 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B291F2E1EF894350071EF46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B291F381EF894350071EF46 /* ViewController.swift in Sources */,
+				2B291F361EF894350071EF46 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B291F4F1EF894350071EF46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B291F5B1EF894350071EF46 /* ExtensionDelegate.swift in Sources */,
+				2B291F591EF894350071EF46 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B291F471EF894350071EF46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B291F431EF894350071EF46 /* HighRoller WatchKit App */;
+			targetProxy = 2B291F461EF894350071EF46 /* PBXContainerItemProxy */;
+		};
+		2B291F561EF894350071EF46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B291F521EF894350071EF46 /* HighRoller WatchKit Extension */;
+			targetProxy = 2B291F551EF894350071EF46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B291F391EF894350071EF46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B291F3A1EF894350071EF46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B291F3E1EF894350071EF46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B291F3F1EF894350071EF46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2B291F491EF894350071EF46 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B291F4A1EF894350071EF46 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B291F5F1EF894350071EF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B291F601EF894350071EF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B291F621EF894350071EF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 373924JE2R;
+				INFOPLIST_FILE = "HighRoller WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		2B291F631EF894350071EF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 373924JE2R;
+				INFOPLIST_FILE = "HighRoller WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		2B291F661EF894350071EF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 373924JE2R;
+				IBSC_MODULE = HighRoller_WatchKit_Extension;
+				INFOPLIST_FILE = "HighRoller WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		2B291F671EF894350071EF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 373924JE2R;
+				IBSC_MODULE = HighRoller_WatchKit_Extension;
+				INFOPLIST_FILE = "HighRoller WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		2B291F6A1EF894350071EF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 373924JE2R;
+				INFOPLIST_FILE = HighRoller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2B291F6B1EF894350071EF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 373924JE2R;
+				INFOPLIST_FILE = HighRoller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B291F2D1EF894350071EF46 /* Build configuration list for PBXProject "HighRoller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B291F5F1EF894350071EF46 /* Debug */,
+				2B291F601EF894350071EF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B291F611EF894350071EF46 /* Build configuration list for PBXNativeTarget "HighRoller WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B291F621EF894350071EF46 /* Debug */,
+				2B291F631EF894350071EF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2B291F651EF894350071EF46 /* Build configuration list for PBXNativeTarget "HighRoller WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B291F661EF894350071EF46 /* Debug */,
+				2B291F671EF894350071EF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2B291F691EF894350071EF46 /* Build configuration list for PBXNativeTarget "HighRoller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B291F6A1EF894350071EF46 /* Debug */,
+				2B291F6B1EF894350071EF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B291F2A1EF894350071EF46 /* Project object */;
+}
