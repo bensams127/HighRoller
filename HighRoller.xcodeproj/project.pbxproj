@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2B291F361EF894350071EF46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F351EF894350071EF46 /* AppDelegate.swift */; };
-		2B291F381EF894350071EF46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F371EF894350071EF46 /* ViewController.swift */; };
-		2B291F3B1EF894350071EF46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F391EF894350071EF46 /* Main.storyboard */; };
-		2B291F3D1EF894350071EF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F3C1EF894350071EF46 /* Assets.xcassets */; };
 		2B291F401EF894350071EF46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F3E1EF894350071EF46 /* LaunchScreen.storyboard */; };
 		2B291F451EF894350071EF46 /* HighRoller WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2B291F441EF894350071EF46 /* HighRoller WatchKit App.app */; };
 		2B291F4B1EF894350071EF46 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F491EF894350071EF46 /* Interface.storyboard */; };
@@ -19,6 +16,13 @@
 		2B291F591EF894350071EF46 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F581EF894350071EF46 /* InterfaceController.swift */; };
 		2B291F5B1EF894350071EF46 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F5A1EF894350071EF46 /* ExtensionDelegate.swift */; };
 		2B291F5D1EF894350071EF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F5C1EF894350071EF46 /* Assets.xcassets */; };
+		2B291F6D1EF895090071EF46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F6C1EF895090071EF46 /* Main.storyboard */; };
+		2B291F6F1EF8952E0071EF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F6E1EF8952E0071EF46 /* Assets.xcassets */; };
+		2B291F711EF895910071EF46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F701EF895910071EF46 /* ViewController.swift */; };
+		2B77DE251EFA1A4D00033118 /* diceroll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B77DE231EFA1A4D00033118 /* diceroll.wav */; };
+		2B77DE261EFA1A4D00033118 /* snakeeyes.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B77DE241EFA1A4D00033118 /* snakeeyes.wav */; };
+		2B9CC6DA1EFCA2F80058A9FC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9CC6D91EFCA2F80058A9FC /* GoogleMobileAds.framework */; };
+		2B9CC6DC1EFCA5F80058A9FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B9CC6DB1EFCA5F80058A9FC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,9 +70,6 @@
 /* Begin PBXFileReference section */
 		2B291F321EF894350071EF46 /* HighRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B291F351EF894350071EF46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B291F371EF894350071EF46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2B291F3A1EF894350071EF46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2B291F3C1EF894350071EF46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B291F3F1EF894350071EF46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B291F411EF894350071EF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B291F441EF894350071EF46 /* HighRoller WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HighRoller WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +81,13 @@
 		2B291F5A1EF894350071EF46 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		2B291F5C1EF894350071EF46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B291F5E1EF894350071EF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B291F6C1EF895090071EF46 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		2B291F6E1EF8952E0071EF46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		2B291F701EF895910071EF46 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		2B77DE231EFA1A4D00033118 /* diceroll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = diceroll.wav; sourceTree = "<group>"; };
+		2B77DE241EFA1A4D00033118 /* snakeeyes.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snakeeyes.wav; sourceTree = "<group>"; };
+		2B9CC6D91EFCA2F80058A9FC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		2B9CC6DB1EFCA5F80058A9FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B9CC6DA1EFCA2F80058A9FC /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,12 +132,12 @@
 		2B291F341EF894350071EF46 /* HighRoller */ = {
 			isa = PBXGroup;
 			children = (
-				2B291F351EF894350071EF46 /* AppDelegate.swift */,
-				2B291F371EF894350071EF46 /* ViewController.swift */,
-				2B291F391EF894350071EF46 /* Main.storyboard */,
-				2B291F3C1EF894350071EF46 /* Assets.xcassets */,
-				2B291F3E1EF894350071EF46 /* LaunchScreen.storyboard */,
+				2B9CC6D91EFCA2F80058A9FC /* GoogleMobileAds.framework */,
+				2B291F751EF897550071EF46 /* Model */,
+				2B291F741EF897210071EF46 /* View */,
+				2B291F761EF897900071EF46 /* Controller */,
 				2B291F411EF894350071EF46 /* Info.plist */,
+				2B9CC6DB1EFCA5F80058A9FC /* GoogleService-Info.plist */,
 			);
 			path = HighRoller;
 			sourceTree = "<group>";
@@ -152,6 +161,42 @@
 				2B291F5E1EF894350071EF46 /* Info.plist */,
 			);
 			path = "HighRoller WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2B291F741EF897210071EF46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B77DE221EFA1A3000033118 /* Sounds */,
+				2B291F6C1EF895090071EF46 /* Main.storyboard */,
+				2B291F6E1EF8952E0071EF46 /* Assets.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2B291F751EF897550071EF46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B291F351EF894350071EF46 /* AppDelegate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2B291F761EF897900071EF46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2B291F701EF895910071EF46 /* ViewController.swift */,
+				2B291F3E1EF894350071EF46 /* LaunchScreen.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2B77DE221EFA1A3000033118 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2B77DE231EFA1A4D00033118 /* diceroll.wav */,
+				2B77DE241EFA1A4D00033118 /* snakeeyes.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B291F401EF894350071EF46 /* LaunchScreen.storyboard in Resources */,
-				2B291F3D1EF894350071EF46 /* Assets.xcassets in Resources */,
-				2B291F3B1EF894350071EF46 /* Main.storyboard in Resources */,
+				2B77DE251EFA1A4D00033118 /* diceroll.wav in Resources */,
+				2B291F6D1EF895090071EF46 /* Main.storyboard in Resources */,
+				2B291F6F1EF8952E0071EF46 /* Assets.xcassets in Resources */,
+				2B77DE261EFA1A4D00033118 /* snakeeyes.wav in Resources */,
+				2B9CC6DC1EFCA5F80058A9FC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B291F381EF894350071EF46 /* ViewController.swift in Sources */,
+				2B291F711EF895910071EF46 /* ViewController.swift in Sources */,
 				2B291F361EF894350071EF46 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,14 +370,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2B291F391EF894350071EF46 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B291F3A1EF894350071EF46 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2B291F3E1EF894350071EF46 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -519,6 +559,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 373924JE2R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HighRoller",
+				);
 				INFOPLIST_FILE = HighRoller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller;
@@ -532,6 +576,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 373924JE2R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HighRoller",
+				);
 				INFOPLIST_FILE = HighRoller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller;
@@ -559,6 +607,7 @@
 				2B291F631EF894350071EF46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B291F651EF894350071EF46 /* Build configuration list for PBXNativeTarget "HighRoller WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +616,7 @@
 				2B291F671EF894350071EF46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B291F691EF894350071EF46 /* Build configuration list for PBXNativeTarget "HighRoller" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +625,7 @@
 				2B291F6B1EF894350071EF46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
