@@ -11,7 +11,6 @@
 		2B291F401EF894350071EF46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F3E1EF894350071EF46 /* LaunchScreen.storyboard */; };
 		2B291F451EF894350071EF46 /* HighRoller WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2B291F441EF894350071EF46 /* HighRoller WatchKit App.app */; };
 		2B291F4B1EF894350071EF46 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F491EF894350071EF46 /* Interface.storyboard */; };
-		2B291F4D1EF894350071EF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F4C1EF894350071EF46 /* Assets.xcassets */; };
 		2B291F541EF894350071EF46 /* HighRoller WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2B291F531EF894350071EF46 /* HighRoller WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2B291F591EF894350071EF46 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F581EF894350071EF46 /* InterfaceController.swift */; };
 		2B291F5B1EF894350071EF46 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F5A1EF894350071EF46 /* ExtensionDelegate.swift */; };
@@ -320,7 +319,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B291F4D1EF894350071EF46 /* Assets.xcassets in Resources */,
 				2B291F4B1EF894350071EF46 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,11 +486,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 373924JE2R;
 				INFOPLIST_FILE = "HighRoller WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -505,11 +505,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 373924JE2R;
 				INFOPLIST_FILE = "HighRoller WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -523,11 +525,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 373924JE2R;
 				IBSC_MODULE = HighRoller_WatchKit_Extension;
 				INFOPLIST_FILE = "HighRoller WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -541,11 +545,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 373924JE2R;
 				IBSC_MODULE = HighRoller_WatchKit_Extension;
 				INFOPLIST_FILE = "HighRoller WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -558,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 373924JE2R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -567,6 +574,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -575,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 373924JE2R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,6 +593,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

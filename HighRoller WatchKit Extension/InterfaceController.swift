@@ -22,7 +22,6 @@ class InterfaceController: WKInterfaceController {
     var diceRoll1: Int = 1
     var diceRoll2: Int = 1
     
-    var diceArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -43,6 +42,8 @@ class InterfaceController: WKInterfaceController {
     @IBAction func rollButtonPushed() {
         
         updateDiceImages()
+        
+        WKInterfaceDevice.current().play(.notification)
         
     }
     func updateDiceImages() {
@@ -67,21 +68,21 @@ class InterfaceController: WKInterfaceController {
             return
         }
     
-    if diceRoll2 == 0 {
-    rightWatchDice.setImage(#imageLiteral(resourceName: "dice1watch"))
-    } else if diceRoll2 == 1 {
-    rightWatchDice.setImage(#imageLiteral(resourceName: "dice2watch"))
-    } else if diceRoll2 == 2 {
-    rightWatchDice.setImage(#imageLiteral(resourceName: "dice3watch"))
-    } else if diceRoll2 == 3 {
-    rightWatchDice.setImage(#imageLiteral(resourceName: "dice4watch"))
-    } else if diceRoll2 == 4 {
-    rightWatchDice.setImage(#imageLiteral(resourceName: "dice5watch"))
-    } else if diceRoll2 == 5 {
-    rightWatchDice.setImage(#imageLiteral(resourceName: "dice6watch"))
-    } else {
-    return
+        if diceRoll2 == 0 {
+            rightWatchDice.setImage(#imageLiteral(resourceName: "dice1watch"))
+        } else if diceRoll2 == 1 {
+            rightWatchDice.setImage(#imageLiteral(resourceName: "dice2watch"))
+        } else if diceRoll2 == 2 {
+            rightWatchDice.setImage(#imageLiteral(resourceName: "dice3watch"))
+        } else if diceRoll2 == 3 {
+            rightWatchDice.setImage(#imageLiteral(resourceName: "dice4watch"))
+        } else if diceRoll2 == 4 {
+            rightWatchDice.setImage(#imageLiteral(resourceName: "dice5watch"))
+        } else if diceRoll2 == 5 {
+            rightWatchDice.setImage(#imageLiteral(resourceName: "dice6watch"))
+        } else {
+            return
+        }
     }
-}
 
 }
