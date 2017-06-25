@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Junetest17
+//  HighRoller
 //
 //  Created by Sams on 6/2/17.
 //  Copyright © 2017 Sams. All rights reserved.
@@ -13,14 +13,17 @@ import GoogleMobileAds
 class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDelegate {
     
     @IBOutlet weak var myBanner: GADBannerView!
+    
     var audioPlayer : AVAudioPlayer!
     
     var diceRoll1: Int = 1
+    
     var diceRoll2: Int = 1
     
     var diceArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
     
  //   let soundArray = ["diceroll", "snakeeyes"]
+   
     
     @IBOutlet weak var diceImageLeft: UIImageView!
     @IBOutlet weak var diceImageRight: UIImageView!

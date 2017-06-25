@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2B291F361EF894350071EF46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F351EF894350071EF46 /* AppDelegate.swift */; };
 		2B291F401EF894350071EF46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F3E1EF894350071EF46 /* LaunchScreen.storyboard */; };
-		2B291F451EF894350071EF46 /* HighRoller WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2B291F441EF894350071EF46 /* HighRoller WatchKit App.app */; };
 		2B291F4B1EF894350071EF46 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F491EF894350071EF46 /* Interface.storyboard */; };
 		2B291F541EF894350071EF46 /* HighRoller WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2B291F531EF894350071EF46 /* HighRoller WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2B291F591EF894350071EF46 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F581EF894350071EF46 /* InterfaceController.swift */; };
@@ -20,6 +19,7 @@
 		2B291F711EF895910071EF46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B291F701EF895910071EF46 /* ViewController.swift */; };
 		2B77DE251EFA1A4D00033118 /* diceroll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B77DE231EFA1A4D00033118 /* diceroll.wav */; };
 		2B77DE261EFA1A4D00033118 /* snakeeyes.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B77DE241EFA1A4D00033118 /* snakeeyes.wav */; };
+		2B7D1C931EFEB62C00C98343 /* HighRoller WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 2B291F441EF894350071EF46 /* HighRoller WatchKit App.app */; };
 		2B9CC6DA1EFCA2F80058A9FC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9CC6D91EFCA2F80058A9FC /* GoogleMobileAds.framework */; };
 		2B9CC6DC1EFCA5F80058A9FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B9CC6DB1EFCA5F80058A9FC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -59,7 +59,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				2B291F451EF894350071EF46 /* HighRoller WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +310,7 @@
 				2B291F6D1EF895090071EF46 /* Main.storyboard in Resources */,
 				2B291F6F1EF8952E0071EF46 /* Assets.xcassets in Resources */,
 				2B77DE261EFA1A4D00033118 /* snakeeyes.wav in Resources */,
+				2B7D1C931EFEB62C00C98343 /* HighRoller WatchKit App.app in Resources */,
 				2B9CC6DC1EFCA5F80058A9FC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +571,7 @@
 					"$(PROJECT_DIR)/HighRoller",
 				);
 				INFOPLIST_FILE = HighRoller/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -590,6 +591,7 @@
 					"$(PROJECT_DIR)/HighRoller",
 				);
 				INFOPLIST_FILE = HighRoller/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
