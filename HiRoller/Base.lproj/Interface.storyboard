@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch42" orientation="portrait">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VI4-9W-tth">
+    <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <scene sceneID="7l8-qz-wa5">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HighRoller_WatchKit_App" customModuleProvider="target">
+                <controller id="VI4-9W-tth" customClass="InterfaceController" customModule="HiRoller" customModuleProvider="target">
                     <items>
-                        <group width="1" height="98" alignment="left" radius="5" id="9YU-wn-Vw5">
+                        <group width="1" height="98" alignment="left" radius="5" id="yhT-kj-zDg">
                             <items>
-                                <imageView width="63" height="63" alignment="left" verticalAlignment="center" image="dice2watch" animationDuration="1" id="gJj-8u-7dG">
+                                <imageView width="63" height="63" alignment="left" verticalAlignment="center" image="dice2watch" animationDuration="1" id="e8I-HL-cgE">
                                     <variation key="device=watch42mm" height="70" width="70"/>
                                 </imageView>
-                                <imageView width="63" height="63" alignment="right" verticalAlignment="center" image="dice5watch" id="Vf7-Ek-c2H">
+                                <imageView width="63" height="63" alignment="right" verticalAlignment="center" image="dice5watch" id="6hU-9B-d0k">
                                     <variation key="device=watch42mm" height="70" width="70"/>
                                 </imageView>
                             </items>
@@ -27,16 +27,16 @@
                             <variation key="device=watch38mm" height="109"/>
                             <variation key="device=watch42mm" height="132"/>
                         </group>
-                        <button width="1" alignment="center" verticalAlignment="bottom" title="Roll" id="Kys-Vf-KQ6">
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Roll" id="FmB-b2-nSa">
                             <color key="backgroundColor" red="0.80105459690000003" green="0.15138781069999999" blue="0.1205159202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="rollButtonPushed" destination="AgC-eL-Hgc" id="9xq-6y-PrE"/>
+                                <action selector="rollButtonPushed" destination="VI4-9W-tth" id="dtx-j6-dDK"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="leftWatchDice" destination="gJj-8u-7dG" id="NWC-FJ-YgN"/>
-                        <outlet property="rightWatchDice" destination="Vf7-Ek-c2H" id="3u5-Qu-lFv"/>
+                        <outlet property="leftWatchDice" destination="e8I-HL-cgE" id="8n6-kP-LHQ"/>
+                        <outlet property="rightWatchDice" destination="6hU-9B-d0k" id="wXh-V6-tb0"/>
                     </connections>
                 </controller>
             </objects>

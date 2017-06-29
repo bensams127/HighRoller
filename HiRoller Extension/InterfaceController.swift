@@ -1,8 +1,8 @@
 //
 //  InterfaceController.swift
-//  HighRoller WatchKit Extension
+//  HiRoller Extension
 //
-//  Created by Sams on 6/19/17.
+//  Created by Sams on 6/27/17.
 //  Copyright © 2017 Sams. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    
     
     @IBOutlet var leftWatchDice: WKInterfaceImage!
     
@@ -26,7 +26,7 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-       
+        
     }
     
     override func willActivate() {
@@ -38,7 +38,7 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
+    
     @IBAction func rollButtonPushed() {
         
         updateDiceImages()
@@ -51,7 +51,7 @@ class InterfaceController: WKInterfaceController {
         diceRoll1 = Int(arc4random_uniform(6))
         diceRoll2 = Int(arc4random_uniform(6))
         
-       
+        
         if diceRoll1 == 0 {
             leftWatchDice.setImage(#imageLiteral(resourceName: "dice1watch"))
         } else if diceRoll1 == 1 {
@@ -67,7 +67,7 @@ class InterfaceController: WKInterfaceController {
         } else {
             return
         }
-    
+        
         if diceRoll2 == 0 {
             rightWatchDice.setImage(#imageLiteral(resourceName: "dice1watch"))
         } else if diceRoll2 == 1 {
@@ -84,5 +84,5 @@ class InterfaceController: WKInterfaceController {
             return
         }
     }
-
+    
 }

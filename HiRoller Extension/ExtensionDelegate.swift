@@ -1,8 +1,8 @@
 //
 //  ExtensionDelegate.swift
-//  HighRoller WatchKit Extension
+//  HiRoller Extension
 //
-//  Created by Sams on 6/19/17.
+//  Created by Sams on 6/27/17.
 //  Copyright © 2017 Sams. All rights reserved.
 //
 

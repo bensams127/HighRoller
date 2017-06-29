@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>HiRoller (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>HiRoller.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>HighRoller WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>2B291F431EF894350071EF46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2B3DD9E91F031970001DA7F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
