@@ -3,7 +3,7 @@
     {
       "size" : "24x24",
       "idiom" : "watch",
-      "filename" : "DiceLogo24Watch.png",
+      "filename" : "DiceLogo24.png",
       "scale" : "2x",
       "role" : "notificationCenter",
       "subtype" : "38mm"
@@ -26,7 +26,7 @@
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "DiceLogo29Watch.png",
+      "filename" : "DiceLogo293x.png",
       "role" : "companionSettings",
       "scale" : "3x"
     },

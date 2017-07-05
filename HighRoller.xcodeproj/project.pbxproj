@@ -511,7 +511,7 @@
 				INFOPLIST_FILE = HighRoller/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.highroller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -531,7 +531,7 @@
 				INFOPLIST_FILE = HighRoller/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.highroller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -546,7 +546,7 @@
 				DEVELOPMENT_TEAM = 373924JE2R;
 				IBSC_MODULE = HiRoller_Extension;
 				INFOPLIST_FILE = HiRoller/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.highroller.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -564,7 +564,7 @@
 				DEVELOPMENT_TEAM = 373924JE2R;
 				IBSC_MODULE = HiRoller_Extension;
 				INFOPLIST_FILE = HiRoller/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.highroller.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -581,7 +581,7 @@
 				DEVELOPMENT_TEAM = 373924JE2R;
 				INFOPLIST_FILE = "HiRoller Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.highroller.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -598,7 +598,7 @@
 				DEVELOPMENT_TEAM = 373924JE2R;
 				INFOPLIST_FILE = "HiRoller Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.HighRoller.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bensams.highroller.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
