@@ -20,6 +20,8 @@
 		2B3DDA021F031970001DA7F2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DDA011F031970001DA7F2 /* NotificationController.swift */; };
 		2B3DDA041F031970001DA7F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3DDA031F031970001DA7F2 /* Assets.xcassets */; };
 		2B3DDA081F031970001DA7F2 /* HiRoller.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2B3DD9EA1F031970001DA7F2 /* HiRoller.app */; };
+		2B3DDA111F0C7309001DA7F2 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DDA101F0C7309001DA7F2 /* SettingsVC.swift */; };
+		2B3DDA171F0EA1AD001DA7F2 /* ContainerVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DDA161F0EA1AD001DA7F2 /* ContainerVC2.swift */; };
 		2B77DE251EFA1A4D00033118 /* diceroll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B77DE231EFA1A4D00033118 /* diceroll.wav */; };
 		2B77DE261EFA1A4D00033118 /* snakeeyes.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B77DE241EFA1A4D00033118 /* snakeeyes.wav */; };
 		2B9CC6DA1EFCA2F80058A9FC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9CC6D91EFCA2F80058A9FC /* GoogleMobileAds.framework */; };
@@ -87,6 +89,8 @@
 		2B3DDA011F031970001DA7F2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		2B3DDA031F031970001DA7F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B3DDA051F031970001DA7F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B3DDA101F0C7309001DA7F2 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		2B3DDA161F0EA1AD001DA7F2 /* ContainerVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerVC2.swift; sourceTree = "<group>"; };
 		2B77DE231EFA1A4D00033118 /* diceroll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = diceroll.wav; sourceTree = "<group>"; };
 		2B77DE241EFA1A4D00033118 /* snakeeyes.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snakeeyes.wav; sourceTree = "<group>"; };
 		2B9CC6D91EFCA2F80058A9FC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 				2B77DE221EFA1A3000033118 /* Sounds */,
 				2B291F6C1EF895090071EF46 /* Main.storyboard */,
 				2B291F6E1EF8952E0071EF46 /* Assets.xcassets */,
+				2B291F3E1EF894350071EF46 /* LaunchScreen.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -166,8 +171,9 @@
 		2B291F761EF897900071EF46 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2B3DDA161F0EA1AD001DA7F2 /* ContainerVC2.swift */,
 				2B291F701EF895910071EF46 /* ViewController.swift */,
-				2B291F3E1EF894350071EF46 /* LaunchScreen.storyboard */,
+				2B3DDA101F0C7309001DA7F2 /* SettingsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -354,7 +360,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B291F711EF895910071EF46 /* ViewController.swift in Sources */,
+				2B3DDA171F0EA1AD001DA7F2 /* ContainerVC2.swift in Sources */,
 				2B291F361EF894350071EF46 /* AppDelegate.swift in Sources */,
+				2B3DDA111F0C7309001DA7F2 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +644,7 @@
 				2B3DDA0C1F031970001DA7F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B3DDA0F1F031970001DA7F2 /* Build configuration list for PBXNativeTarget "HiRoller" */ = {
 			isa = XCConfigurationList;
@@ -644,6 +653,7 @@
 				2B3DDA0A1F031970001DA7F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
