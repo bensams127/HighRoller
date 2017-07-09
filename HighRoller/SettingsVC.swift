@@ -14,7 +14,9 @@ class settingsViewController : UIViewController {
         
         if sender.selectedSegmentIndex == 1 {
             
-        //    containerViewController.View.hidden == true
+      //      singleDieContainer == true
+        } else {
+            
         }
     }
 

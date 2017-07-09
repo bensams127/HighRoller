@@ -11,7 +11,8 @@ import AVFoundation
 import GoogleMobileAds
 
 class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDelegate {
-    
+   
+    @IBOutlet weak var settingsView: UIView!
     @IBOutlet weak var myBanner: GADBannerView!
     
     var audioPlayer : AVAudioPlayer!
@@ -22,11 +23,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
     
     var diceArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
     
- //   let soundArray = ["diceroll", "snakeeyes"]
-   
+    var soundToggle: Bool = true
     
     @IBOutlet weak var diceImageLeft: UIImageView!
     @IBOutlet weak var diceImageRight: UIImageView!
+    
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,14 +47,20 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
         
         updateDiceImages()
         
+    
+        
     }
     
     @IBAction func rollButton(_ sender: Any) {
         
         updateDiceImages()
         
-        soundQuestion()
+        if soundToggle == true {
         
+        soundQuestion()
+        } else {
+            return
+        }
     }
     
     func updateDiceImages() {
@@ -86,6 +94,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
     }
     
     func soundQuestion(){
+    
+        
         if diceRoll1 == 0 && diceRoll2 == 0 {
             
             playSound(soundFileName: "snakeeyes")
@@ -96,5 +106,45 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
         
     }
     
-}
+    
+    @IBAction func settingsButtonPushed(_ sender: Any) {
+        
+            self.settingsView.isHidden = false
+     
+            UIView.animate(withDuration: 0.15) { () -> Void in
+            self.settingsView.alpha = 1
+        }
 
+    }
+
+   
+    @IBAction func okButtonPressed(_ sender: Any) {
+       
+   
+        UIView.animate(withDuration: 0.15) { () -> Void in
+        self.settingsView.alpha = 0
+            
+            let when = DispatchTime.now() + 1 // change 2 to desired number of seconds
+            DispatchQueue.main.asyncAfter(deadline: when) {
+                self.settingsView.isHidden = true
+            }
+            
+        }
+        
+    }
+    
+    @IBAction func soundSwitch(_ sender: UISwitch) {
+        
+        if sender.isOn == false {
+            
+            soundToggle = false
+            
+        } else {
+            
+            soundToggle = true
+           
+            }
+
+    }
+
+}
