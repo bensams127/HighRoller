@@ -21,14 +21,21 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
     
     var diceRoll2: Int = 1
     
+    var diceRollSingle: Int = 1
+    
     var diceArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+   
     var soundToggle: Bool = true
     
     @IBOutlet weak var diceImageLeft: UIImageView!
     @IBOutlet weak var diceImageRight: UIImageView!
     
-    var timer = Timer()
+    @IBOutlet weak var diceImageSingle: UIImageView!
+    
+    @IBOutlet weak var singleMiddleview: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,14 +74,23 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
         
         diceRoll1 = Int(arc4random_uniform(6))
         diceRoll2 = Int(arc4random_uniform(6))
+        diceRollSingle = Int(arc4random_uniform(6))
         
         diceImageLeft.image = UIImage(named: diceArray[diceRoll1])
         diceImageRight.image = UIImage(named: diceArray[diceRoll2])
+        diceImageSingle.image = UIImage(named: diceArray[diceRollSingle])
     }
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         updateDiceImages()
-        soundQuestion()
+        
+        if soundToggle == true {
+            
+            soundQuestion()
+        } else {
+            return
+        }
+
     }
     
     
@@ -96,7 +112,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
     func soundQuestion(){
     
         
-        if diceRoll1 == 0 && diceRoll2 == 0 {
+        if diceRoll1 == 0 && diceRoll2 == 0 && singleMiddleview.isHidden == true {
             
             playSound(soundFileName: "snakeeyes")
             
@@ -145,6 +161,15 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
            
             }
 
+    }
+    
+    @IBAction func diceNumberSelection(_ sender: Any) {
+        
+        switch segmentedControl.selectedSegmentIndex {
+            case 0: singleMiddleview.isHidden = false
+            case 1: singleMiddleview.isHidden = true
+            default: break
+        }
     }
 
 }
